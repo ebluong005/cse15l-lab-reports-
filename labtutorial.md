@@ -6,8 +6,10 @@ Loop up course CSE15L Account with follwing link:
 
 
 ## Part 2 (Visual Studio Account)
-Go to the Visual Studio Code website [Link](https://code.visualstudio.com/), and follow the instructions to download and install it on your computer. There are versions for all the major operating systems, like macOS (for Macs) and Windows (for PCs).
+Go to the Visual Studio Code website [Link](https://code.visualstudio.com/), and follow the instructions to download and install it on your computer. There are versions for all the major operating systems, like macOS (for Macs) and Windows (for PCs). 
 ![Screenshot 2023-04-06 153929](https://user-images.githubusercontent.com/130106644/230506713-ef75d7e2-23a0-47ca-bb8e-dc2511b02dff.png)
+
+file:///var/folders/rw/1553xfd961bf6fjhdbb1lzpr0000gn/T/TemporaryItems/NSIRD_screencaptureui_LJHeXc/Screen%20Shot%202023-04-24%20at%202.28.05%20PM.png
 
 ## Part 3 (Remotely Connecting)
  If you’re on Windows: install git for Windows, which comes with some useful tools we need, use follwing link:
@@ -18,3 +20,7 @@ Then, to use ssh, open a terminal in VScode. (Ctrl or Command + `, or use the Te
 Then you will be prompted for a password, enter your complete password for your CSE15L Course account.
 
 ![Screenshot 2023-04-06 154812](https://user-images.githubusercontent.com/130106644/230507658-ff7d30d2-9331-48a1-bc0a-58c2376befec.png)
+
+
+
+
