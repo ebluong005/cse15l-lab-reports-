@@ -1,4 +1,4 @@
-# Lab 1 Tutorial for Reomote Access (Resubmission)
+# Lab 1 Tutorial for Remote Access (Resubmission)
 ## Part 1 (Find CSE15L Account)
 Loop up course CSE15L Account with follwing link:
 [Link](https://sdacs.ucsd.edu/~icc/index.php)
