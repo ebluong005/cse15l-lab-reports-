@@ -24,7 +24,7 @@ Then you will be prompted for a password, enter your complete password for your 
 
 
 ## Part 4 (Running Commands on Server)
-Try running running the follwings commands in terminal: ls, cd, and pwd. Ls is used to list directoy, cd is used to change directory, and pwd is used to print working directory.
+Try running running the following commands in terminal: ls, cd, and pwd. Ls is used to list directoy, cd is used to change directory, and pwd is used to print working directory.
 
 
 <img width="960" alt="Screen Shot 2023-04-24 at 2 36 58 PM" src="https://user-images.githubusercontent.com/130106644/234123101-574863b4-d9d7-4918-8a6f-814049360373.png">
