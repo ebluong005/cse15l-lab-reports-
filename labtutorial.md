@@ -1,4 +1,4 @@
-# Lab 1 Tutorial for Reomote Access (Resubmission)
+# Lab 1 Tutorial for Remote Access (Resubmission)
 ## Part 1 (Find CSE15L Account)
 Loop up course CSE15L Account with follwing link:
 [Link](https://sdacs.ucsd.edu/~icc/index.php)
@@ -20,17 +20,12 @@ Then, to use ssh, open a terminal in VScode. (Ctrl or Command + `, or use the Te
 
 Then you will be prompted for a password, enter your complete password for your CSE15L Course account.
 
-<img width="960" alt="Screen Shot 2023-04-24 at 2 36 58 PM" src="https://user-images.githubusercontent.com/130106644/234123101-574863b4-d9d7-4918-8a6f-814049360373.png">
+<img width="719" alt="Screen Shot 2023-04-24 at 2 36 01 PM" src="https://user-images.githubusercontent.com/130106644/234123381-62c3b3dc-6b7b-4db7-8030-985a4e659dc4.png">
 
 
 ## Part 4 (Running Commands on Server)
 Try running running the follwings commands in terminal: ls, cd, and pwd. Ls is used to list directoy, cd is used to change directory, and pwd is used to print working directory.
 
 
-<img width="719" alt="Screen Shot 2023-04-24 at 2 36 01 PM" src="https://user-images.githubusercontent.com/130106644/234123381-62c3b3dc-6b7b-4db7-8030-985a4e659dc4.png">
-
-
-
-
-
+<img width="960" alt="Screen Shot 2023-04-24 at 2 36 58 PM" src="https://user-images.githubusercontent.com/130106644/234123101-574863b4-d9d7-4918-8a6f-814049360373.png">
 
