@@ -1,31 +1,24 @@
-# Lab 1 Tutorial for Remote Access (Resubmission)
-## Part 1 (Find CSE15L Account)
-Loop up course CSE15L Account with follwing link:
-[Link](https://sdacs.ucsd.edu/~icc/index.php)
+# Lab 2 Lab Report 2 - Servers and Bugs (Week 3)
 
+##Part 1 (String Server)
+<img width="592" alt="Screen Shot 2023-04-24 at 3 17 24 PM" src="https://user-images.githubusercontent.com/130106644/234128517-e68fb4ce-bd67-4590-91eb-5e92663dd57d.png">
 
-## Part 2 (Visual Studio Account)
-Go to the Visual Studio Code website [Link](https://code.visualstudio.com/), and follow the instructions to download and install it on your computer. There are versions for all the major operating systems, like macOS (for Macs) and Windows (for PCs).
+The frist thing I did was call the main method, by compiling the file "StringServer.java" and inputing java StringServer 1555. That gave me the link to input the url. In this screenshot I used the "/add-message?s=<string>" that is in Handler class that implements URL handler that NumberServer also uses. 
+Inside of my handler class I have a coditianls that uses .equals to check for "/add-message". In the input I used, there was an add message and a string of Hello. My method then splits the url path at the "=" and the assigns the split string in to refernce I created to store the split stirng. 
+Additinally the method also creates a new line, by checking for S in the splitted message url path.
+Then the website output would end up being message used in the url path, appearing as "Hello".
 
+ <img width="644" alt="Screen Shot 2023-04-24 at 3 19 25 PM" src="https://user-images.githubusercontent.com/130106644/234128799-6cd058aa-df37-4e88-8980-0ec54fc83685.png">
 
-<img width="310" alt="Screen Shot 2023-04-24 at 2 34 18 PM" src="https://user-images.githubusercontent.com/130106644/234123036-985d6656-315e-402a-bc66-8179f71efd51.png">
-
-
-
-## Part 3 (Remotely Connecting)
- If you’re on Windows: install git for Windows, which comes with some useful tools we need, use follwing link:
- [Link](https://gitforwindows.org/)
+In this screen shot, I used the same string command that the method uses to add new strings. The server is still the same being "http://localhost:1555/", and the add message command in the path is the same only string input if differnt here. 
+. In the last screenshot a new line was actally created. This input command works the same as the last screenshot
+only now the message is just diffent. This leads to output being "How Are You. 
  
-Then, to use ssh, open a terminal in VScode. (Ctrl or Command + `, or use the Terminal → New Terminal menu option). Your command will look like this, but with the zz replaced by the letters in your course-specific account. Use the follwing format to start log in terminal -> $ ssh cs15lwi23zz@ieng6.ucsd.edu (repalce with yout own username).
 
-Then you will be prompted for a password, enter your complete password for your CSE15L Course account.
-
-<img width="719" alt="Screen Shot 2023-04-24 at 2 36 01 PM" src="https://user-images.githubusercontent.com/130106644/234123381-62c3b3dc-6b7b-4db7-8030-985a4e659dc4.png">
+##Part 2 (Bugs)
+I will be doing the.
 
 
-## Part 4 (Running Commands on Server)
-Try running running the follwings commands in terminal: ls, cd, and pwd. Ls is used to list directoy, cd is used to change directory, and pwd is used to print working directory.
+##Part 3 (Reflection)
 
-
-<img width="960" alt="Screen Shot 2023-04-24 at 2 36 58 PM" src="https://user-images.githubusercontent.com/130106644/234123101-574863b4-d9d7-4918-8a6f-814049360373.png">
 
