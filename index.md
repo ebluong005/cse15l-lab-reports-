@@ -1,31 +1,122 @@
-# Lab 1 Tutorial for Remote Access (Resubmission)
-## Part 1 (Find CSE15L Account)
-Loop up course CSE15L Account with follwing link:
-[Link](https://sdacs.ucsd.edu/~icc/index.php)
+# Lab 2 Lab Report 2 - Servers and Bugs (Week 3)
+
+##Part 1 (String Server)
 
 
-## Part 2 (Visual Studio Account)
-Go to the Visual Studio Code website [Link](https://code.visualstudio.com/), and follow the instructions to download and install it on your computer. There are versions for all the major operating systems, like macOS (for Macs) and Windows (for PCs).
-
-
-<img width="310" alt="Screen Shot 2023-04-24 at 2 34 18 PM" src="https://user-images.githubusercontent.com/130106644/234123036-985d6656-315e-402a-bc66-8179f71efd51.png">
+<img width="592" alt="Screen Shot 2023-04-24 at 3 17 24 PM" src="https://user-images.githubusercontent.com/130106644/234128517-e68fb4ce-bd67-4590-91eb-5e92663dd57d.png">
 
 
 
-## Part 3 (Remotely Connecting)
- If you’re on Windows: install git for Windows, which comes with some useful tools we need, use follwing link:
- [Link](https://gitforwindows.org/)
+The frist thing I did was call the main method, by compiling the file "StringServer.java" and inputing java StringServer 1555. That gave me the link to input the url. In this screenshot I used the "/add-message?s=<string>" that is in Handler class that implements URL handler that NumberServer also uses. 
+Inside of my handler class I have a coditianls that uses .equals to check for "/add-message". In the input I used, there was an add message and a string of Hello. My method then splits the url path at the "=" and the assigns the split string in to refernce I created to store the split stirng. 
+Additinally the method also creates a new line, by checking for S in the splitted message url path.
+Then the website output would end up being message used in the url path, appearing as "Hello".
+
  
-Then, to use ssh, open a terminal in VScode. (Ctrl or Command + `, or use the Terminal → New Terminal menu option). Your command will look like this, but with the zz replaced by the letters in your course-specific account. Use the follwing format to start log in terminal -> $ ssh cs15lwi23zz@ieng6.ucsd.edu (repalce with yout own username).
+ 
+ <img width="644" alt="Screen Shot 2023-04-24 at 3 19 25 PM" src="https://user-images.githubusercontent.com/130106644/234128799-6cd058aa-df37-4e88-8980-0ec54fc83685.png">
 
-Then you will be prompted for a password, enter your complete password for your CSE15L Course account.
+ 
+ 
+In this screen shot, I used the same string command that the method uses to add new strings. The server is still the same being "http://localhost:1555/", and the add message command in the path is the same only string input if differnt here. 
+. In the last screenshot a new line was actally created. This input command works the same as the last screenshot
+only now the message is just diffent. This leads to output being "How Are You. 
+ 
 
-<img width="719" alt="Screen Shot 2023-04-24 at 2 36 01 PM" src="https://user-images.githubusercontent.com/130106644/234123381-62c3b3dc-6b7b-4db7-8030-985a4e659dc4.png">
+##Part 2 (Bugs)
+ 
+I will be doing ListExamples examples for bugs.
+ 
+(A failure-inducing input)
+````
+ @Test
+    void testMergePass() {
+        List<String> list1 = Arrays.asList("apple", "banana", "cherry");
+        List<String> list2 = Arrays.asList("cherry", "date", "elderberry");
+        List<String> expected = Arrays.asList("apple", "banana", "cherry", "cherry", "date", "elderberry");
+        List<String> actual = ListExamples.merge(list1, list2);
+        assertEquals(expected, actual);
+    }
+ ````
+
+ (An input that doesn’t induce a failure)
+````
+    @Test
+    void testMergeFail() {
+        List<String> list1 = Arrays.asList("apple", "banana", "cherry");
+        List<String> list2 = Arrays.asList("cherry", "date", "elderberry");
+        List<String> expected = Arrays.asList("apple", "banana", "cherry", "date", "elderberry");
+        List<String> actual = ListExamples.merge(list1, list2);
+        assertEquals(expected, actual);
+    }
+ 
+ ````
+ 
+(Debugging)
+ 
+(before)
+````
+ static List<String> merge(List<String> list1, List<String> list2) {
+    List<String> result = new ArrayList<>();
+    int index1 = 0, index2 = 0;
+    while(index1 < list1.size() && index2 < list2.size()) {
+      if(list1.get(index1).compareTo(list2.get(index2)) < 0) {
+        result.add(list1.get(index1));
+        index1 += 1;
+      }
+      else {
+        result.add(list2.get(index2));
+        index2 += 1;
+      }
+    }
+    while(index1 < list1.size()) {
+      result.add(list1.get(index1));
+      index1 += 1;
+    }
+    while(index2 < list2.size()) {
+      result.add(list2.get(index2));
+      index1 += 1;
+    }
+    return result;
+  }
 
 
-## Part 4 (Running Commands on Server)
-Try running running the following commands in terminal: ls, cd, and pwd. Ls is used to list directoy, cd is used to change directory, and pwd is used to print working directory.
+}
+ 
+ ````
+ 
+ (after)
+ ````
+ static List<String> merge(List<String> list1, List<String> list2) {
+    List<String> result = new ArrayList<>();
+    int index1 = 0, index2 = 0;
+    while(index1 < list1.size() && index2 < list2.size()) {
+      if(list1.get(index1).compareTo(list2.get(index2)) < 0) {
+        result.add(list1.get(index1));
+        index1 += 1;
+      }
+      else {
+        result.add(list2.get(index2));
+        index2 += 1;
+      }
+    }
+    while(index1 < list1.size()) {
+      result.add(list1.get(index1));
+      index1 += 1;
+    }
+    while(index2 < list2.size()) {
+      result.add(list2.get(index2));
+      index2 += 1;
+    }
+    return result;
+}
+ ````
+ 
+ 
+ 
+ 
 
-
-<img width="960" alt="Screen Shot 2023-04-24 at 2 36 58 PM" src="https://user-images.githubusercontent.com/130106644/234123101-574863b4-d9d7-4918-8a6f-814049360373.png">
+##Part 3 (Reflection)
+ 
+ Learning how to create local and remote servers was really intersting. Understanding how paths and the terminolgy behing websites is something useful that I learned too.
 
