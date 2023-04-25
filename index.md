@@ -2,7 +2,7 @@
 
 ##Part 1 (String Server)
 
-Stringserver code
+StringServer code
 ````
 import java.io.IOException;
 import java.net.URI;
