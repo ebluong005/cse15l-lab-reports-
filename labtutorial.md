@@ -2,6 +2,43 @@
 
 ##Part 1 (String Server)
 
+Stringserver code
+````
+import java.io.IOException;
+import java.net.URI;
+
+class Handler implements URLHandler {
+    
+    String message;
+
+    public String handleRequest(URI url) {
+        //if userinput contains "/add-message"
+        if (url.getPath().equals("/add-message")) {
+            String[] parameters = url.getQuery().split("=");
+            if (parameters[0].equals("s")) {
+                message += "\n" + parameters[1];
+                return message;
+            }
+        }
+        return "404 Not Found!";
+    }
+}
+
+//use from numberserver
+class StringServer {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Handler());
+    }
+}
+
+````
 
 <img width="592" alt="Screen Shot 2023-04-24 at 3 17 24 PM" src="https://user-images.githubusercontent.com/130106644/234128517-e68fb4ce-bd67-4590-91eb-5e92663dd57d.png">
 
@@ -119,5 +156,4 @@ I will be doing ListExamples examples for bugs.
 ##Part 3 (Reflection)
  
  Learning how to create local and remote servers was really intersting. Understanding how paths and the terminolgy behing websites is something useful that I learned too.
-
 
