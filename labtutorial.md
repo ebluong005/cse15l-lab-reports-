@@ -24,34 +24,33 @@ only now the message is just diffent. This leads to output being "How Are You.
  
 
 ##Part 2 (Bugs)
+ 
 I will be doing ListExamples examples for bugs.
  
 (A failure-inducing input)
 ````
  @Test
-    public void testListsTest1(){
-        LinkedList fail = new LinkedList();
-        fail.prepend(1);
-        fail.prepend(2);
-        assertEquals(1, fail.first());
+    void testMergePass() {
+        List<String> list1 = Arrays.asList("apple", "banana", "cherry");
+        List<String> list2 = Arrays.asList("cherry", "date", "elderberry");
+        List<String> expected = Arrays.asList("apple", "banana", "cherry", "cherry", "date", "elderberry");
+        List<String> actual = ListExamples.merge(list1, list2);
+        assertEquals(expected, actual);
     }
  ````
 
  (An input that doesn’t induce a failure)
 ````
- @Test
-    public void testListsTest2(){
-        LinkedList pass = new LinkedList();
-        pass.append(1);
-        pass.append(2);
-        pass.append(3);
-        assertEquals(3, pass.last());
+    @Test
+    void testMergeFail() {
+        List<String> list1 = Arrays.asList("apple", "banana", "cherry");
+        List<String> list2 = Arrays.asList("cherry", "date", "elderberry");
+        List<String> expected = Arrays.asList("apple", "banana", "cherry", "date", "elderberry");
+        List<String> actual = ListExamples.merge(list1, list2);
+        assertEquals(expected, actual);
     }
  
  ````
- 
-(Symptoms)
- 
  
 (Debugging)
  
