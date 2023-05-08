@@ -1075,7 +1075,7 @@ Output
 ``` 
 
 Source
-[link](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
+[https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/](https://linuxize.com/post/how-to-find-files-in-linux-using-the-command-line/)
 
 **Command Option 2 (-size)**
 
@@ -1139,7 +1139,7 @@ Output
 ./technical/911report/chapter-12.txt
 ``` 
 Source
-[link](https://linuxconfig.org/how-to-use-find-command-to-search-for-files-based-on-file-size)
+[https://linuxconfig.org/how-to-use-find-command-to-search-for-files-based-on-file-size](https://linuxconfig.org/how-to-use-find-command-to-search-for-files-based-on-file-size)
 
 **Command Option 3 (Name)**
 This option allows you to search for files with a specific name or pattern. It is useful for finding files that are grouped by label or finding specific files.
@@ -1173,7 +1173,7 @@ chapter-1.txt
 ``` 
 
 Source
-[link](https://linuxhostsupport.com/blog/how-to-search-files-on-the-linux-terminal/#:~:text=You%20can%20use%20the%20find,that%20you%20want%20to%20search.&text=You%20can%20use%20the%20following,d%20%E2%80%93%20directory)
+[https://linuxhostsupport.com/blog/how-to-search-files-on-the-linux-terminal/#:~:text=You%20can%20use%20the%20find,that%20you%20want%20to%20search.&text=You%20can%20use%20the%20following,d%20%E2%80%93%20directory](https://linuxhostsupport.com/blog/how-to-search-files-on-the-linux-terminal/#:~:text=You%20can%20use%20the%20find,that%20you%20want%20to%20search.&text=You%20can%20use%20the%20following,d%20%E2%80%93%20directory)
 
 **Command Option 4 (empty)**
 
@@ -1207,4 +1207,4 @@ no ouput
 ``` 
 
 Source
-[link](https://www.google.com/search?q=finding+empty+files+in+directory&oq=finding+empty+file+&aqs=chrome.2.69i57j0i22i30j0i15i22i30j0i10i22i30j0i22i30l6.4177j0j4&sourceid=chrome&ie=UTF-8)
+[https://www.google.com/search?q=finding+empty+files+in+directory&oq=finding+empty+file+&aqs=chrome.2.69i57j0i22i30j0i15i22i30j0i10i22i30j0i22i30l6.4177j0j4&sourceid=chrome&ie=UTF-8](https://www.google.com/search?q=finding+empty+files+in+directory&oq=finding+empty+file+&aqs=chrome.2.69i57j0i22i30j0i15i22i30j0i10i22i30j0i22i30l6.4177j0j4&sourceid=chrome&ie=UTF-8)
