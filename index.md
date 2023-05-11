@@ -88,7 +88,7 @@ I will be doing ArrayListExamples examples for bugs.
  
  ````
  
- Sympton of running tests
+ Symptom of running tests
  
  ````
 MacBook-Air-33:lab3-1 ethanluong$ javac ArrayExamples.java
